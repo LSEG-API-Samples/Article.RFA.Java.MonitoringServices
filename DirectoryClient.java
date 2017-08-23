@@ -194,8 +194,8 @@ public class DirectoryClient implements Client
                     }
                     else if (action == OMMMapEntry.Action.DELETE)
                     {
-                    	//in Delete action, remove the deleted service in_serviceStateMap instead of _serviceMap and print the deleted service on the console  
-                    	   // _serviceMap.remove(serviceName);
+                    	    _serviceMap.remove(serviceName);
+                    	   //in Delete action, remove the deleted service in _serviceStateMap and print the deleted service on the console  
                     	    _serviceStateMap.remove(serviceName);
                     	    System.out.println("## Monitor - "+"Service=" + serviceName + " has been deleted from the server");
 
